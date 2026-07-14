@@ -11,7 +11,7 @@ export async function proxy(request: NextRequest) {
   // ); `${process.env.NEXT_PUBLIC_API_URL}/api/vehicle/create`
 
   const response2 = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/auth/get-session`,
+    "https://fox-express.onrender.com/api/auth/get-session",
     {
       credentials: "include",
       headers: {
