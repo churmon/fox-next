@@ -73,7 +73,7 @@ export default function CreatePostForm() {
   // perform async upload, then use startTransition for the navigation
   (async () => {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/vehicle/create`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/vehicle/create`, {
         method: "POST",
         body: formData,
         credentials: "include", // important for Better Auth cookies

@@ -17,7 +17,7 @@ export interface VehicleCheck {
 // NEXT_PUBLIC_API_URL
 
 export default async function Home() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/vehicle`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/vehicle`, {
     method: "GET",
     cache: "no-store",          // always fresh data
     credentials: "include",     // include Better Auth cookies
