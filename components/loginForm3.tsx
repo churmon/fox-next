@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
+import Link from "next/link";
 
 // Zod schema
 const signinSchema = z.object({
@@ -100,6 +101,8 @@ export default function SignInForm3() {
         ) : null}
         {loading ? "Signing In..." : "Sign In"}
       </Button>
+      <Link href="/sign-up"  className="flex items-center gap-2 text-gray-700 hover:text-blue-600"> Register
+                        </Link>
     </form>
   );
 }

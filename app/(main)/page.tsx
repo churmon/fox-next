@@ -40,9 +40,9 @@ export default async function Home() {
     
   
     return (
-      <div className="p-6 space-y-6">
+      <div className=" p-6 space-y-6">
         <h1 className="text-2xl font-bold">My Vehicle Checks</h1>
-        <ul className="space-y-4">
+        <ul className="grid space-y-4">
           {posts.map((post) => (
             <li
               key={post._id}
